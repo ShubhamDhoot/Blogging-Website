@@ -114,7 +114,7 @@ margin: 10px 10px 0px 10px;
   color: white;
 }
 
-#signUpForm{
+#signUpForm, #signInForm{
 	padding:8px;
 }
 
