@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>   
-        <link href='styles/index.css' rel='stylesheet' type='text/css'>
+        
 		<link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -11,8 +11,9 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<script src="scripts/index.js"></script>
+		<link href='styles/index.css' rel='stylesheet' type='text/css'>
 </head>
-<body style=" background: url(images/background.jpg);  background-repeat: no-repeat;  background-size: 100% 100%; ">    
+<body >    
         <div class="header">
            
 			<button class="topButtons" onclick="document.getElementById('signUpModal').style.display='block'">Sign Up</button>
@@ -28,7 +29,7 @@
 		
     
 	<div id="signUpModal" class="w3-modal">
-    <div class="w3-modal-content" style="width:30%;padding-bottom:5px">
+    <div class="w3-modal-content" >
       <header class="w3-container "> 
         <span onclick="document.getElementById('signUpModal').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
@@ -58,7 +59,7 @@
   </div>
   
   <div id="signInModal" class="w3-modal">
-    <div class="w3-modal-content" style="width:30%;padding-bottom:5px">
+    <div class="w3-modal-content">
       <header class="w3-container "> 
         <span onclick="document.getElementById('signInModal').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>
@@ -83,7 +84,7 @@
   </div>
   
   <div id="createPostModal" class="w3-modal">
-    <div class="w3-modal-content" style="width:50%;padding-bottom:5px">
+    <div class="w3-modal-content" >
       <header class="w3-container "> 
         <span onclick="document.getElementById('createPostModal').style.display='none'" 
         class="w3-button w3-display-topright">&times;</span>

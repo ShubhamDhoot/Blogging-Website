@@ -1,4 +1,8 @@
-
+body{
+	background: url(../images/background.jpg); 
+	background-repeat: no-repeat;  
+	background-size: 100% 100%;
+}
 
 button {
     background-color: #4CAF50;
@@ -130,9 +134,9 @@ margin: 10px 10px 0px 10px;
 }
 
 .w3-modal-content{
-	width:50%;
+	width:30%;
+	padding-bottom:5px;
 }
-
 .indexBody{
 height: 100vh; 
   display: flex; 

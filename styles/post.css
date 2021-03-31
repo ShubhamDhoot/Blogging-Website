@@ -1,73 +1,3 @@
-body{
-	background-color:#ffeedd;
-}
-
-.card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-	border-radius: 2rem;
-}
-.card :hover{
-    box-shadow: 8px 8px 8px grey;
-}
-.img-square-wrapper{
-	padding: 5px;
-	border-radius: 2rem;
-	display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color:white;
-  pointer-events: none;
-}
-
-.card-body{
-	border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-	background-color:#D7DBDD
-}
-.card{
-	border-radius: 2rem;
-	
-}
-
-.card-title{
-	pointer-events: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: grey;
-}
-
-.col-6{
-	padding:20px;
-	max-width:45%;
-	border-radius: 2rem;
-}
-
-
-.card-text {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-line-clamp: 3; /* number of lines to show */
-   -webkit-box-orient: vertical;
-   pointer-events: none;
-}
-
-.fa-trash-o, .fa-ellipsis-h{
-	float: right;
-	color:grey;
-}
-
-#delete-no-button{
-	
-   margin-left:50%;
-	width:20%;
-}
-#delete-yes-button{
-	
-    margin-left: 20px;
-	width:20%;
-}
 
 button {
     background-color: #4CAF50;
@@ -187,10 +117,47 @@ margin: 10px 10px 0px 10px;
 	padding:8px;
 }
 
-#delete-content{
-	padding:8px;
-}
 .w3-modal-content{
 	width:30%;
 	padding-bottom:5px;
+}
+
+.postDetail{
+	padding-left:3%;
+	padding-right:3%;
+	padding-top:2%;
+}
+
+#edit, #save{
+	width:10%;
+	margin-left:80%;
+	background-color:red;
+	
+}
+
+.fa-edit, .fa-save, .fa-thumbs-o-up{
+	color:white;
+}
+
+#likeBlog , #addList{
+	width:10%;
+	background-color:red;
+}
+
+#likeCount{
+	color:black;
+}
+
+#addEventNames{
+	background-color:#D7DBDD;
+	border:1px solid #D7DBDD;
+	width:60%;
+}
+
+.commentList{
+	background-color:white;
+	margin:15px 5px 15px 5px;
+	height:5%;
+	line-height: 250%;
+	
 }
