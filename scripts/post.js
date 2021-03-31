@@ -11,6 +11,11 @@ function editMode(){
 	postTitle.style.border='1px solid pink';
 	postBody.style.border='1px solid pink';
 }
+var postListObj=localStorage["postList"];
+if(postListObj !=null){
+	var postList = JSON.parse(localStorage["postList"]);
+	var id = JSON.parse(localStorage["postId"]);
+}
 
 var text = document.getElementById('postTitle');
 var myData;
@@ -61,3 +66,18 @@ function addComments(id){
         document.getElementById('addEventNames').innerHTML += '<p class="commentList">'+addEventName+'</p>';          
         a.value=a.defaultValue;
     }
+	
+	
+	window.onload = function() {
+		if(postList==null){
+			document.getElementById('postTitle').innerHTML="Everything you should know about 'module' & 'require' in Node.js";
+		document.getElementById('postAuthor').innerHTML="Srishti Gupta";
+		document.getElementById('postContent').innerHTML="Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you've created a module named xyz.";
+		}
+		else{
+			document.getElementById('postTitle').innerHTML=postList[id-1].header;
+		document.getElementById('postAuthor').innerHTML=postList[id-1].name;
+		document.getElementById('postContent').innerHTML=postList[id-1].body;
+		}
+		
+	}

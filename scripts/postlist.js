@@ -26,6 +26,8 @@ const postList = [
 }
 ];
 
+localStorage["postList"] = JSON.stringify(postList);
+
 var id=-1;
 function updateCard(){
 	
@@ -35,17 +37,23 @@ function updateCard(){
 	var deleteModal="'deleteModal'";
 	var block="'block'";
 	for(var i=0;i<postList.length;i++){
-		cardHtml+= '<div class="col-6 " ><div class="card"><div class="card-horizontal"><div class="img-square-wrapper" >'+postList[i].name+'</div><div class="card-body" ><span class="card-title">'+postList[i].header+'</span><a href="#"><i class="fa fa-trash-o" id="'+(i+1)+'"onclick="updateId(this.id);document.getElementById('+deleteModal+').style.display='+block+';"></i></a><p class="card-text">'+postList[i].body+'</p><br><a href="../html/post.html"><i class="fa fa-ellipsis-h"></i></a></div></div></div></div>';
+		cardHtml+= '<div class="col-6 " ><div class="card"><div class="card-horizontal"><div class="img-square-wrapper" >'+postList[i].name+'</div><div class="card-body" ><span class="card-title">'+postList[i].header+'</span><a href="#"><i class="fa fa-trash-o" id="'+(i+1)+'"onclick="updateId(this.id);document.getElementById('+deleteModal+').style.display='+block+';"></i></a><p class="card-text">'+postList[i].body+'</p><br><a href="../html/post.html"><i class="fa fa-ellipsis-h" id="'+(i+1)+'" onclick="updatePostId(this.id)"></i></a></div></div></div></div>';
 	}
 	
 	document.getElementById("cardData").innerHTML=cardHtml;
 	id=-1;
+	localStorage["postList"] = JSON.stringify(postList);
 	}
 	
 }
 
 function updateId(inputId){
+	
 	id=inputId;
+}
+
+function updatePostId(postId){
+	localStorage["postId"] = postId;
 }
 
 window.onload = function() {
@@ -54,7 +62,7 @@ window.onload = function() {
 	var deleteModal="'deleteModal'";
 	var block="'block'";
 	for(var i=0;i<postList.length;i++){
-		cardHtml+= '<div class="col-6 " ><div class="card"><div class="card-horizontal"><div class="img-square-wrapper" >'+postList[i].name+'</div><div class="card-body" ><span class="card-title">'+postList[i].header+'</span><a href="#"><i class="fa fa-trash-o" id="'+(i+1)+'"onclick="updateId(this.id);document.getElementById('+deleteModal+').style.display='+block+';"></i></a><p class="card-text">'+postList[i].body+'</p><br><a href="../html/post.html"><i class="fa fa-ellipsis-h"></i></a></div></div></div></div>';
+		cardHtml+= '<div class="col-6 " ><div class="card"><div class="card-horizontal"><div class="img-square-wrapper" >'+postList[i].name+'</div><div class="card-body" ><span class="card-title">'+postList[i].header+'</span><a href="#"><i class="fa fa-trash-o" id="'+(i+1)+'"onclick="updateId(this.id);document.getElementById('+deleteModal+').style.display='+block+';"></i></a><p class="card-text">'+postList[i].body+'</p><br><a href="../html/post.html"><i class="fa fa-ellipsis-h" id="'+(i+1)+'" onclick="updatePostId(this.id)"></i></a></div></div></div></div>';
 	}
 	
 	document.getElementById("cardData").innerHTML=cardHtml;
