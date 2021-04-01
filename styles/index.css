@@ -1,7 +1,7 @@
 body{
-	background: url(../images/background.jpg); 
-	background-repeat: no-repeat;  
-	background-size: 100% 100%;
+    background: url(../images/background.jpg); 
+    background-repeat: no-repeat;  
+    background-size: 100% 100%;
 }
 
 button {
@@ -30,7 +30,7 @@ button {
 }
 
 .postButtons{
-	padding: 10px;
+    padding: 10px;
  cursor: pointer;
  font-weight: 500;
  font-size: 90%;
@@ -130,12 +130,12 @@ margin: 10px 10px 0px 10px;
 }
 
 #signUpForm, #signInForm, #createPostForm{
-	padding:8px;
+    padding:8px;
 }
 
 .w3-modal-content{
-	width:30%;
-	padding-bottom:5px;
+    width:30%;
+    padding-bottom:5px;
 }
 .indexBody{
 height: 100vh; 

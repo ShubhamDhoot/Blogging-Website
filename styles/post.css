@@ -114,50 +114,50 @@ margin: 10px 10px 0px 10px;
 }
 
 #signUpForm, #signInForm{
-	padding:8px;
+    padding:8px;
 }
 
 .w3-modal-content{
-	width:30%;
-	padding-bottom:5px;
+    width:30%;
+    padding-bottom:5px;
 }
 
 .postDetail{
-	padding-left:3%;
-	padding-right:3%;
-	padding-top:2%;
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:2%;
 }
 
 #edit, #save{
-	width:10%;
-	margin-left:80%;
-	background-color:red;
-	
+    width:10%;
+    margin-left:80%;
+    background-color:red;
+    
 }
 
 .fa-edit, .fa-save, .fa-thumbs-o-up{
-	color:white;
+    color:white;
 }
 
 #likeBlog , #addList{
-	width:10%;
-	background-color:red;
+    width:10%;
+    background-color:red;
 }
 
 #likeCount{
-	color:black;
+    color:black;
 }
 
 #addEventNames{
-	background-color:#D7DBDD;
-	border:1px solid #D7DBDD;
-	width:60%;
+    background-color:#D7DBDD;
+    border:1px solid #D7DBDD;
+    width:60%;
 }
 
 .commentList{
-	background-color:white;
-	margin:15px 5px 15px 5px;
-	height:5%;
-	line-height: 250%;
-	
+    background-color:white;
+    margin:15px 5px 15px 5px;
+    height:5%;
+    line-height: 250%;
+    
 }

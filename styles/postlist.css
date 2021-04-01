@@ -1,19 +1,19 @@
 body{
-	background-color:#ffeedd;
+    background-color:#ffeedd;
 }
 
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
-	border-radius: 2rem;
+    border-radius: 2rem;
 }
 .card :hover{
     box-shadow: 8px 8px 8px grey;
 }
 .img-square-wrapper{
-	padding: 5px;
-	border-radius: 2rem;
-	display: flex;
+    padding: 5px;
+    border-radius: 2rem;
+    display: flex;
   justify-content: center;
   align-items: center;
   background-color:white;
@@ -21,26 +21,26 @@ body{
 }
 
 .card-body{
-	border-top-right-radius: 2rem;
+    border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
-	background-color:#D7DBDD
+    background-color:#D7DBDD
 }
 .card{
-	border-radius: 2rem;
-	
+    border-radius: 2rem;
+    
 }
 
 .card-title{
-	pointer-events: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: grey;
+    pointer-events: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: grey;
 }
 
 .col-6{
-	padding:20px;
-	max-width:45%;
-	border-radius: 2rem;
+    padding:20px;
+    max-width:45%;
+    border-radius: 2rem;
 }
 
 
@@ -54,19 +54,19 @@ body{
 }
 
 .fa-trash-o, .fa-ellipsis-h{
-	float: right;
-	color:grey;
+    float: right;
+    color:grey;
 }
 
 #delete-no-button{
-	
+    
    margin-left:50%;
-	width:20%;
+    width:20%;
 }
 #delete-yes-button{
-	
+    
     margin-left: 20px;
-	width:20%;
+    width:20%;
 }
 
 button {
@@ -184,13 +184,13 @@ margin: 10px 10px 0px 10px;
 }
 
 #signUpForm, #signInForm{
-	padding:8px;
+    padding:8px;
 }
 
 #delete-content{
-	padding:8px;
+    padding:8px;
 }
 .w3-modal-content{
-	width:30%;
-	padding-bottom:5px;
+    width:30%;
+    padding-bottom:5px;
 }
