@@ -64,7 +64,7 @@ function clickLike(){
 function addComments(id){
     var addEventName = id.value +'<br>';
     var comment = document.getElementById('userComments');
-    document.getElementById('addEventNames').innerHTML += '<p class="commentList">'+addEventName+'</p>';          
+    document.getElementById('addEventNames').innerHTML = '<p class="commentList">'+addEventName+'</p>' +document.getElementById('addEventNames').innerHTML;          
     comment.value=comment.defaultValue;
     }
     
